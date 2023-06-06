@@ -1,0 +1,221 @@
+body { 
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* margin: -150px 0 0 300px; */
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.text p {
+    font-size: 40px;
+    padding: 0;
+}
+.imgs {
+    position: absolute;
+    height: 20%;
+    min-width: 300px;
+    z-index: 1;
+    object-fit: cover;
+}
+.imgs:hover {
+   cursor: pointer;
+   border-radius: 8px;
+}
+.img1 {
+     top:30%;
+     left: 0%;
+     animation: circle1 30s linear infinite;
+}
+
+.img2 {
+  left: 60%;
+  top: 65%;
+  animation: circle2 30s linear infinite;
+}
+
+.img3 {
+  left: 50%;
+  top: 85%;
+  animation: circle3 40s linear infinite;
+}
+
+.img4 {
+  left: 80%;
+  top: 0%;
+  animation: circle4 50s linear infinite;
+}
+
+.img5 {
+  left: 90%;
+  top: 60%;
+  animation: circle5 70s linear infinite;
+}
+
+.img6 {
+  left: 35%;
+  top: 10%;
+  animation: circle6 30s linear infinite;
+}
+
+.img7 {
+  left: 10%;
+  top: 70%;
+  animation: circle7 50s linear infinite;
+}
+/* p {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    z-index: 99;
+
+}
+.p1{
+    left:5%;
+    top:20%;
+      animation: circle1 30s linear infinite;
+}
+.p2{
+   
+    left: 35%;
+    top:20%;
+     animation: circle7 50s linear infinite;
+
+}
+.p3{
+    left:45%;
+    top:75%;
+      animation: circle5 70s linear infinite;
+
+}
+.p4{
+    left: 85%;
+    top:20%;
+    animation: circle3 40s linear infinite;
+
+} */
+
+@keyframes circle1 {
+    from {
+        transform: rotate(0deg)
+                   translate(-30px)
+                   rotate(0deg);
+
+    }
+    to {
+        transform: rotate(360deg)
+                   translate(-30px)
+                   rotate(-360deg);
+    }
+}
+@keyframes circle2 {
+    from {
+        transform: rotate(360deg)
+                   translate(-30px)
+                   rotate(-360deg);
+
+    }
+    to {
+        transform: rotate(0deg)
+                   translate(-30px)
+                   rotate(0deg);
+    }
+}
+@keyframes circle3 {
+    from {
+        transform: rotate(360deg)
+                   translate(-30px)
+                   rotate(-360deg);
+
+    }
+    to {
+        transform: rotate(0deg)
+                   translate(-30px)
+                   rotate(0deg);
+    }
+}
+@keyframes circle4 {
+    from {
+        transform: rotate(360deg)
+                   translate(-60px)
+                   rotate(-360deg);
+
+    }
+    to {
+        transform: rotate(0deg)
+                   translate(-60px)
+                   rotate(0deg);
+    }
+}
+@keyframes circle5 {
+    from {
+        transform: rotate(360deg)
+                   translate(-80px)
+                   rotate(-360deg);
+
+    }
+    to {
+        transform: rotate(0deg)
+                   translate(-80px)
+                   rotate(0deg);
+    }
+}
+@keyframes circle6 {
+    from {
+        transform: rotate(360deg)
+                   translate(-30px)
+                   rotate(-360deg);
+
+    }
+    to {
+        transform: rotate(0deg)
+                   translate(-30px)
+                   rotate(0deg);
+    }
+}
+@keyframes circle7 {
+    from {
+        transform: rotate(360deg)
+                   translate(-50px)
+                   rotate(-360deg);
+
+    }
+    to {
+        transform: rotate(0deg)
+                   translate(-50px)
+                   rotate(0deg);
+    }
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  
+  /* Styles for the fullscreen image */
+  .fullscreen-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
